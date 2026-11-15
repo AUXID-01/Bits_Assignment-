@@ -1,0 +1,51 @@
+====================================================================
+GIT & GITHUB WORKFLOW — COMMAND REFERENCE
+====================================================================
+
+1. git init
+   Creates a new local Git repository in the current folder so file changes can be tracked.
+
+2. git branch -M main
+   Renames the initial working branch to 'main' as the primary line of development.
+
+3. git status
+   Shows the current state of the working directory, highlighting untracked, modified, and staged files.
+
+4. git add .
+   Stages all newly created and modified files in the project directory for the upcoming commit.
+
+5. git add <filename>
+   Adds a specific modified file to the staging area before recording a snapshot.
+
+6. git commit -m "<commit-message>"
+   Saves the staged changes permanently in the local repository history with a descriptive label.
+
+7. git branch feature
+   Creates a separate development branch named 'feature' without switching away from the current branch.
+
+8. git checkout feature
+   Switches the active working directory from 'main' onto the 'feature' branch.
+
+9. git branch
+   Lists all local branches in the repository and marks the currently active branch with an asterisk (*).
+
+10. git checkout main
+    Switches the active working directory back to the 'main' branch.
+
+11. git merge feature
+    Combines the commits and file updates from the 'feature' branch into the 'main' branch.
+
+12. git log --oneline --graph --all
+    Displays a compact visual commit tree across all branches to verify commits and merge history.
+
+13. git log --oneline
+    Prints a condensed single-line list of recent commit hashes and their messages.
+
+14. git reset --hard HEAD~1
+    Undoes the most recent commit by moving HEAD back one step and discarding the temporary file changes.
+
+15. git remote add origin https://github.com/<username>/<repository-name>.git
+    Links the local Git repository to the remote public GitHub repository under the alias 'origin'.
+
+16. git push -u origin main
+    Uploads all local commits on the 'main' branch to GitHub and sets upstream tracking for future pushes.
